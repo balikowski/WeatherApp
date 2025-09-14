@@ -1,0 +1,10 @@
+.logobar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .logo{
+        height: auto;
+        width: clamp(200px,10vw,250px);
+    }
+}

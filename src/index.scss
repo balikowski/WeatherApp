@@ -1,0 +1,15 @@
+@import './styles/globals.module.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $neutral900;
+  color: $neutral0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}

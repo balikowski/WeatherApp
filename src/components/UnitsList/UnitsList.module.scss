@@ -1,0 +1,40 @@
+@import '../../styles/globals.module.scss';
+
+.unitsList{
+    background-color: $neutral800;
+    border-radius: 8px;
+    border: 1px solid $neutral700;
+    position: absolute;
+    right: 0;
+    top: clamp(50px,2.5vw,60px);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    gap: 3px;
+
+    .category{
+        color: $neutral300;
+        font-family: $fontFamily100;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        margin-left: 40px;
+        font-size: 12px;
+        width: 85%;
+        margin: 0;
+        font-weight: 400;
+        position: relative; 
+        display: inline-block;
+    }
+    .category::before{
+        content: "";
+        position: absolute;
+        bottom: 32px; 
+        left: -10px;
+        width: 110%;
+        height: 1px; 
+        background-color: $neutral600;
+    }
+}
