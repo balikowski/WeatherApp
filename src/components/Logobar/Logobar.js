@@ -6,21 +6,19 @@ import UnitsList from '../UnitsList/UnitsList';
 import { useState } from 'react';
 
 
-const Logobar = () =>{
+const Logobar = ({units,setUnits}) =>{
     const [isListShowed, setIsListShowed] = useState(false);
 
     const toggleList = (currState) => {
         setIsListShowed(!currState);
     }
 
-    const test = () =>{
-        console.log("test");
-    }
     return (
         <div className={styles.logobar}>
             <Logo className={styles.logo}/>
             <UnitsButton onClick={()=>{toggleList(isListShowed)}} />
-            <UnitsList isShowed={isListShowed}/>
+            <UnitsList units={units} setUnits={setUnits} isShowed={isListShowed}/>
+            
         </div>
     )
 }

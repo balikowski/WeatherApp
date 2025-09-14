@@ -11,8 +11,9 @@ function App() {
 
   return (
    <Container>
-    <Logobar/>
+    <Logobar units={units} setUnits={setUnits}/>
    </Container>
+   
   );
 }
 

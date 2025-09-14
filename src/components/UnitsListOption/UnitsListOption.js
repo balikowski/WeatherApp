@@ -4,16 +4,16 @@ import { ReactComponent as CheckMark} from '../../data/images/icon-checkmark.svg
 
 
 
-const UnitsListOption = ({isActive, value}) =>{
+const UnitsListOption = ({isActive, value, onClick}) =>{
     if(isActive){
         return (
-        <div className={`${styles.unitsListOption} ${styles.active}`}>
+        <div onClick={onClick} className={`${styles.unitsListOption} ${styles.active}`}>
            <span>{value}</span> <CheckMark />
         </div>
     )
     } else{
         return (
-        <div className={styles.unitsListOption}>
+        <div onClick={onClick} className={styles.unitsListOption}>
            <span>{value}</span>
         </div>
     )
